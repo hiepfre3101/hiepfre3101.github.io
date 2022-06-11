@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Inter', sans-serif;
+}
+/*mobile*/
+.container{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+header{
+    width: 100%;
+    height: 100px;
+    padding-top: 30px;
+}
+.main-content{
+    width: 100%;
+}
+.main-content p{
+    font-size: 16px;
+    font-weight: 600;
+}
+#form-1{
+    width: 80%;
+    height: 400px;
+    margin-top: 20px;
+    margin-left: 12%;
+}
+#form-1 .form-group{
+    padding-bottom: 20px;
+}
+#form-1 .form-group label{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color:rgba(74, 85, 104, 1);
+    position: absolute;
+    left: 17%;
+}
+#form-email{
+    display: block;
+    margin-right: 30px;
+}
+#form-1 .form-group input{
+    width: 90%;
+    height: 50px;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid  rgba(55, 169, 205, 1);
+    margin-top: 10px;
+}
+#form-1 .form-group button{
+    width: 90%;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+  border: none;
+}
+#form-1 .form-group #btn-login{
+    background-color:  rgba(55, 169, 205, 1);
+    color: white;
+    font-weight: 600;
+}
+
+
+
+
+
+/*destop*/
+@media(min-width:1024px){
+    .container{
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+header{
+    width: 1000px;
+    height: 150px;
+    padding-top: 30px;
+}
+.main-content{
+    width: 1000px;
+}
+.main-content h1{
+    font-weight: 900;
+}
+.main-content p{
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+#form-1{
+    width: 450px;
+    height: 400px;
+    margin-top: 20px;
+    margin-left: 28%;
+    position: relative;
+}
+#form-1 .form-group{
+    padding-bottom: 20px;
+}
+#form-1 .form-group label{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color:rgba(74, 85, 104, 1);
+    position: absolute;
+    left: 8%;
+}
+#form-email{
+    display: block;
+    margin-right: 30px;
+}
+#form-1 .form-group input{
+    width: 400px;
+    height: 50px;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid  rgba(55, 169, 205, 1);
+    margin-top: 10px;
+}
+#form-1 .form-group button{
+    width: 400px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+  border: none;
+}
+#form-1 .form-group #btn-login{
+    background-color:  rgba(55, 169, 205, 1);
+    color: white;
+    font-weight: 600;
+}
+}

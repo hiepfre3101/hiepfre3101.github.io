@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e6b03d2b34.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body onresize="responsive()">
+     
+    <div class="container">
+        <div class="header">
+            <div class="logo"><img src="../images/logo.png" alt=""></div>
+            <div class="list-item">
+                <i class="fa-solid fa-list" id="list" ></i>
+            </div>
+            <div class="responsive-block">
+                <i class="fa-solid fa-xmark" id="xDot"></i>
+                  <div class="menu" id="nav-head">
+                <ul>
+                    <li><a href="../html/index.html">Home</a></li>
+                    <li><a href="../html/product.html">Products</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="authenticate">
+                <img src="../images/Cart.png" class="item" id="cart-icon" onclick="loadCart()">
+                <button class="item"><a href="../html/signin.html" style="text-decoration: none;
+                    color:rgba(245, 71, 72, 1);">Sign in</a></button>
+                <button class="item"> <a href="../html/signup.html" style="text-decoration: none;
+                    color:rgba(245, 71, 72, 1);">Sign up</a></button>
+            </div>
+            </div>
+        </div> <!--end of header-->
+
+        <div class="nav-cart">
+
+            <button class="detail-cart" type="button" onclick="loadCart()">View Cart</button>
+        </div>
+
+     <div class="content">
+         <div class="main-cart">
+           <h2 id="title-main">Shopping Cart</h2>
+           <div class="cart-wrapper">
+                
+           </div>
+           <div class="total-cart">
+               <label style="font-weight: 600">Total ($):</label>
+               <input type="text" disabled placeholder="$" id="total-money">
+               <button id="btn-total">Purchases</button>
+           </div>
+         </div> <!--end of main-cart-->
+         <div class="relate-product">
+             <h2 id="title-relate">You May Also Like</h2>
+             <div class="item-relate">
+                 <img src="../images/item1.png" alt="">
+                 <a href="../html/detail.html">Big and Juicy Wagyu Beef Cheeseburger</a>
+                 <span id="price-relate">30 <span>$</span></span>
+                <button type="button" onclick="addCart(1)">Add to Cart</button> 
+            </div>
+             <div class="item-relate">
+                 <img src="../images/item2.png" alt="">
+                 <a href="../html/detail.html">Fresh Lime Roasted Salmon</a>
+                 <span id="price-relate">10 <span>$</span></span>
+                <button type="button" onclick="addCart(2)">Add to Cart</button> 
+            </div>
+         </div>
+     </div>
+     <footer class="footer">
+        <div class="logo">
+            <img src="../images/logo.png" alt="" >
+        </div>  
+          <div class="menu">
+              <ul>
+                  <li><a href="../html/index.html">Home</a></li>
+                  <li><a href="../html/product.html">Products</a></li>
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">Contact Us</a></li>
+              </ul>
+          </div>
+      </footer>
+
+
+    </div>
+
+
+</body>
+<script src="../js/animation.js"></script>
+<script src="../js/cart.js" ></script>
+</html>
